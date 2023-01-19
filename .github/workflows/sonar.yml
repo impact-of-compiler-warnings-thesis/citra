@@ -19,20 +19,7 @@ jobs:
         uses: SonarSource/sonarcloud-github-c-cpp@v1
       - name: Install deps
         run: |
-          sudo apt install ninja-build \ 
-                           libsdl2-dev \ 
-                           libssl-dev \ 
-                           qtbase5-dev \ 
-                           libqt5opengl5-dev \
-                           qtmultimedia5-dev \
-                           libqt5multimedia5-plugins \
-                           libqt5multimedia5-plugins \
-                           libfdk-aac-dev  \
-                           ffmpeg \
-                           libswscale-dev \
-                           libavformat-dev \
-                           libavcodec-dev  \ 
-                           libavdevice-dev
+          sudo apt install ninja-build libsdl2-dev libssl-dev qtbase5-dev libqt5opengl5-dev qtmultimedia5-dev libqt5multimedia5-plugins libqt5multimedia5-plugins libfdk-aac-dev  ffmpeg libswscale-dev libavformat-dev libavcodec-dev libavdevice-dev
       - name: Run build-wrapper
         run: |
           mkdir build
